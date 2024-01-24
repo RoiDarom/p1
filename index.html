@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTW App Template with Calculator</title>
+    <link rel="stylesheet" href="calcStyle.css">
+   
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="m-buttons">
+            <button onclick="">MC</button>
+            <button onclick="">MR</button>
+            <button onclick="">M+</button>
+            <button onclick="">M-</button>
+            <button onclick="">MS</button>
+            <button onclick="">M*</button>
+        </div>
+
+
+        <div class="buttons">
+          
+            <button onclick="toggleMemory()">2nd</button>
+            <button onclick="appendConstant('π')">π</button>
+            <button onclick="appendConstant('e')">e</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="clearLastCharacter()">←</button>
+            <button onclick="appendOperator('^2')">x^2</button>
+            <button onclick="reciprocal()">1/x</button>
+            <button onclick="absolute()">|x|</button>
+            <button onclick="exponential()">exp</button>
+            <button onclick="appendOperator('%')">mod</button>
+            <button onclick="sqrt()">√x</button>
+            <button onclick="appendParenthesis('(')">(</button>
+            <button onclick="appendParenthesis(')')">)</button>
+            <button onclick="factorial()">n!</button>
+            <button onclick="appendOperator('/')">/</button>
+            <button onclick="power()">x^y</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('*')">*</button>
+            <button onclick="tenPower()">10^x</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('-')">-</button>
+            <button onclick="appendOperator('log')">log</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendOperator('ln')">ln</button>
+            <button onclick="appendOperator('x/-')">x/-</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendDecimal()">.</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="calcScript.js"></script>
+   
+    ///////////////////////////////////////////////////////
+    // implement this functions in order to use private API        
+    const sendPrivateApiRequest = async () => {
+        // your code here:
+        // sendRequestToParent({ cat: 'getAssets' })
+    }        
+
+    const acceptPrivateApiResponse = async (data) => {
+        // process received data here:
+        // console.log(data)
+    }
+
+    // use this in order to send on document load
+    document.addEventListener('DOMContentLoaded', () => {
+        // your code here:
+        //sendRequestToParent({ method: 'getAssets' })
+    })
+
+</script>
+<script src="https://morethanwallet.com/appstore/index.js"></script>
+
+
+
+</body>
+
+</html>
